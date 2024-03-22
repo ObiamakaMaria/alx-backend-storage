@@ -1,0 +1,3 @@
+-- THE SQL CREATES AN INDEX 
+-- ON THE TABLE NAMES AND FIRST LETTER OF NAME & SCORE
+CREATE INDEX idx_name_first_score ON names ( name(1), score );
