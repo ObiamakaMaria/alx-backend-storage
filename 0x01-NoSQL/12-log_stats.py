@@ -9,8 +9,8 @@ if __name__ == '__main__':
     server = pymongo.MongoClient('mongodb://127.0.0.1:27017/')
 
     x = server.logs.nginx
-    lis = x.count_documents({})
-    print(f"{lis} logs")
+    docs = x.count_documents({})
+    print(f"{docs} logs")
 
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print("Methods:")
